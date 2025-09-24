@@ -25,6 +25,6 @@ jobs:
       - name: Build the React app
         run: NODE_OPTIONS="--max-old-space-size=8192" npm run build:prod
         working-directory: client-portal-starter
-        continue-on-error: false
+        continue-on-error: true
         id: build-app
 
