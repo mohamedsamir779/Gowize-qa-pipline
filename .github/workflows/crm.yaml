@@ -28,7 +28,7 @@ jobs:
           files: src/
 
       - name: Build the React app
-        run: NODE_OPTIONS="--max-old-space-size=8192" npm run build:prod
+        run: sudo npm install env-cmd --save-dev && NODE_OPTIONS="--max-old-space-size=8192" npm run build:prod
         working-directory: crm-frontned-starter-kit
         continue-on-error: false
         id: build-app
