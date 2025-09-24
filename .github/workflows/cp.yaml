@@ -1,10 +1,8 @@
 name: Deploy client-portal
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,7 +23,7 @@ jobs:
         id: install-dependencies
 
       - name: Build the React app
-        run: npm run build
+        run: NODE_OPTIONS="--max-old-space-size=8192" npm run build:prod
         working-directory: client-portal-starter
         continue-on-error: false
         id: build-app
