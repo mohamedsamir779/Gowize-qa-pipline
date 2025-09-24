@@ -1,0 +1,69 @@
+name: Node.js Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # Checks out the code from the repository
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Install dependencies with npm
+        run: npm install
+        working-directory: backend-api
+        continue-on-error: false
+        id: install-dependencies
+
+      - name: Run build
+        run: npm run build
+        working-directory: backend-api
+        continue-on-error: false
+        id: run-build
+
+      - name: Run ESLint
+        run: npm run lint
+        working-directory: backend-api
+        continue-on-error: false
+        id: run-eslint
+
+      - name: Run Jest tests
+        run: npm test
+        working-directory: backend-api
+        continue-on-error: false
+        id: run-tests
+
+      # Success/Failure message after key steps
+      - name: Check Success/Failure Messages
+        if: always()
+        run: |
+          if [ ${{ steps.install-dependencies.outcome }} == 'success' ]; then
+            echo "✅ Dependencies installed successfully!"
+          else
+            echo "❌ Failed to install dependencies!"
+            exit 1
+          fi
+
+          if [ ${{ steps.run-eslint.outcome }} == 'success' ]; then
+            echo "✅ ESLint passed!"
+          else
+            echo "❌ ESLint failed!"
+            exit 1
+          fi
+
+          if [ ${{ steps.run-tests.outcome }} == 'success' ]; then
+            echo "✅ Jest tests passed!"
+          else
+            echo "❌ Jest tests failed!"
+            exit 1
+          fi
+
