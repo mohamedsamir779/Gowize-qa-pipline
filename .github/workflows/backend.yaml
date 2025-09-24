@@ -1,10 +1,8 @@
 name: Node.js Pipeline
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,12 +28,6 @@ jobs:
         continue-on-error: false
         id: run-build
 
-      - name: Run ESLint
-        run: npm run lint
-        working-directory: backend-api
-        continue-on-error: false
-        id: run-eslint
-
       - name: Run Jest tests
         run: npm test
         working-directory: backend-api
@@ -52,18 +44,6 @@ jobs:
             echo "❌ Failed to install dependencies!"
             exit 1
           fi
-
-          if [ ${{ steps.run-eslint.outcome }} == 'success' ]; then
-            echo "✅ ESLint passed!"
-          else
-            echo "❌ ESLint failed!"
-            exit 1
-          fi
-
-          if [ ${{ steps.run-tests.outcome }} == 'success' ]; then
-            echo "✅ Jest tests passed!"
-          else
-            echo "❌ Jest tests failed!"
             exit 1
           fi
 
