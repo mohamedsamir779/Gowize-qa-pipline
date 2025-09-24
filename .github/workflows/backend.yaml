@@ -33,17 +33,3 @@ jobs:
         working-directory: backend-api
         continue-on-error: true
         id: run-tests
-
-      # Success/Failure message after key steps
-      - name: Check Success/Failure Messages
-        if: always()
-        run: |
-          if [ ${{ steps.install-dependencies.outcome }} == 'success' ]; then
-            echo "✅ Dependencies installed successfully!"
-          else
-            echo "❌ Failed to install dependencies!"
-            exit 1
-          fi
-            exit 1
-          fi
-
