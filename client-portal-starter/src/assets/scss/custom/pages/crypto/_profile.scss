@@ -1,0 +1,58 @@
+.profile {
+    .upload-document {
+        .button-container {
+            margin-top: 30px;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+            button {
+                width: 20%;
+            }
+        }
+
+        .upload-button-container {
+            margin-top: 30px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            button {
+                width: 40%;
+                height: 80px;
+            }
+        }
+
+        .inputs-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            width: 100%;
+
+            &>div {
+                width: 50%;
+            }
+        }
+        .form-control{
+            border-radius: 8px;
+        }
+        .form-select{
+            border-radius: 8px;
+        }
+    }
+    .my-document{
+        min-height: 126px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@include dark{
+    .profile{
+        .upload-document{
+            .form-select{
+                border: 0px solid #3b403d;
+            }
+        }
+    }
+}

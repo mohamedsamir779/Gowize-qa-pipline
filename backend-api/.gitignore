@@ -1,0 +1,23 @@
+# Logs
+/logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+uploads/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+# .env
+.env.prod
+
+/uploads/*
+package-lock.json
+
+yarn.lock
+# database files for run-rs (node package for replica sets)
+/data
+.env.staging

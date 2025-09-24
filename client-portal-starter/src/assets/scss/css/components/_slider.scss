@@ -1,0 +1,189 @@
+.slider {
+	position: relative;
+
+	&__close {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		z-index: 3;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background: $white;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+		.icon {
+			font-size: 9px;
+			fill: $black;
+			transition: transform .2s;
+		}
+
+		&:hover .icon {
+			transform: rotate(90deg);
+		}
+	}
+
+	&__container {
+		margin: 0 -16px;
+	}
+
+	&__item {
+		position: relative;
+		margin: 0 16px;
+		padding: 32px 32px 32px;
+		border-radius: 24px;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+		color: $white;
+		width: 50%;
+
+		@include r(991) {
+			width: 100%;
+		}
+	}
+
+	&__date {
+		margin-bottom: 5px;
+		@include caption-input;
+	}
+
+	&__title {
+		@include h4;
+	}
+
+	&__info {
+		margin-bottom: 24px;
+	}
+
+	&__btn {
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.152444);
+	}
+
+	&__preview {
+		position: absolute;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.owl-dots {
+		position: absolute;
+		left: 48px;
+		bottom: 32px;
+		z-index: 3;
+		display: flex;
+		align-items: center;
+	}
+
+	.owl-carousel button.owl-dot {
+		flex-shrink: 0;
+		width: 24px;
+		height: 2px;
+		border-radius: 1px;
+		background: rgba($white, .5);
+		transition: all .2s;
+
+		&.active {
+			background: $white;
+		}
+
+		@include nl {
+			margin-right: 4px;
+		}
+	}
+
+	&_home &__item {
+		min-height: 300px;
+		background: $gradient-purple;
+
+		@include m {
+			min-height: 591px;
+		}
+	}
+
+	&_home &__preview {
+		left: 0;
+		bottom: -157px;
+		width: 740px;
+
+		@include r(1799) {
+			left: -20px;
+		}
+
+		@include r(1550) {
+			left: -15%;
+		}
+
+		@include m {
+			left: -80%;
+			bottom: -145px;
+		}
+	}
+
+	&_promotions &__item {
+		min-height: 508px;
+		background: radial-gradient(51.4% 51.4% at 100% 2.73%, #D080FF 0%, #6C5DD3 100%, #6C5DD3 100%);
+
+		@include x {
+			min-height: 420px;
+		}
+
+		@include m {
+			min-height: 508px;
+		}
+	}
+
+	&_promotions &__wrap {
+		max-width: 310px;
+	}
+
+	&_promotions &__preview {
+		left: 0;
+		bottom: -16px;
+		width: 790px;
+
+		@include x {
+			bottom: -30%;
+		}
+
+		@include m {
+			bottom: -27%;
+			width: 600px;
+		}
+	}
+
+	@include nl {
+		margin-bottom: 64px;
+
+		@include d {
+			margin-bottom: 48px;
+		}
+
+		@include m {
+			margin-bottom: 32px;
+		}
+	}
+}
+
+@include dark {
+	.slider {
+		&__close {
+			background: $dark-color;
+
+			.icon {
+				fill: $white;
+			}
+		}
+	}
+}

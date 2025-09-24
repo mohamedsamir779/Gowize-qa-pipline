@@ -1,0 +1,38 @@
+.topBar {
+  width: 100%;
+  background-color: #244987;
+  text-align: center;
+  margin: 15px 0;
+  color: #FFF;
+  padding: 7px 0;
+}
+
+.key {
+  flex: 0 0 10%;
+  color: #244987;
+}
+
+.inqueries {
+  color: #244987;
+}
+
+@font-face {
+  font-family: 'Bulgatti';
+  src: url('../fonts/Bulgattis.ttf');
+  font-weight: 400;
+}
+
+.signature{
+  font-family: 'Bulgatti';
+  font-size: 16px
+}
+
+.hidden {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+#ref{
+  min-width: 1450px;
+}

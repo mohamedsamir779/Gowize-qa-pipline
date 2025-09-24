@@ -1,0 +1,17 @@
+.custom-radio {
+  display: flex;
+  align-items: center;
+  background-color: $gray-dark-800;
+  border: 1px solid $gray-dark-700;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+body[data-layout-mode="dark"] {
+  .custom-radio {
+    background-color: $gray-dark-100;
+    border: 1px solid $gray-dark-100;
+  }
+  .radio-group {
+    background-color: #0B182F;
+  }
+}

@@ -1,0 +1,13 @@
+[{
+  "baseCurrency": "USD",
+  "targetCurrency": "EUR",
+  "value": "0.93"
+},{
+  "baseCurrency": "EUR",
+  "targetCurrency": "USD",
+  "value": "1.07"
+},{
+  "baseCurrency": "USD",
+  "targetCurrency": "AED",
+  "value": "3.675"
+}]

@@ -1,0 +1,381 @@
+.forex {
+    .steps {
+        display: flex;
+        @include r(478) {
+            display: block;
+        }
+
+        &-card {
+            width: 28%;
+            position: relative;
+
+            @include r(478) {
+                width: 100%;
+                padding: 1rem 0.2rem;
+            }
+
+            .number {
+                // for screens between 768px and 450px
+                @include r-between("768px", "478px") {
+                    font-size: 4rem;
+                }
+
+            }
+
+            &-title {
+                font-size: 1rem;
+                @include r-between("768px", "478px") {
+                    font-size: 0.8rem;
+                }
+            }
+
+            &-title-container {
+                @include r(478) {
+                    margin-top: 0px !important;
+                }
+            }
+
+            &-icon {
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                top: 50%;
+                right: 0px;
+
+                @include r(768) {
+                    right: 0px;
+                    top: 40%;
+                }
+
+                @include r(450) {
+                    width: 0px;
+                    height: 0px;
+                }
+            }
+        }
+    }
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include r(450) {
+        display: block;
+    }
+
+    &-card {
+        width: 28%;
+        position: relative;
+
+        &-icon {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            top: 50%;
+            right: -50px;
+
+            @include r(768) {
+                right: -15px;
+                top: 40%;
+            }
+
+            @include r(450) {
+                width: 0px;
+                height: 0px;
+            }
+        }
+
+        @include r(768) {
+            width: 30%;
+        }
+
+        @include r(450) {
+            width: 100%;
+        }
+
+        .number {
+            font-size: 6rem;
+            font-weight: bolder;
+            background: linear-gradient(180deg, #057923 0%, #E4B200 75%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &-title-container {
+            margin-top: -30px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: large;
+            position: relative;
+
+            .custom-border {
+                position: absolute;
+                width: 40px;
+                background: linear-gradient(90deg, #057923 0%, #E4B200 0%);
+                height: 5px;
+                bottom: -10px;
+                left: 0;
+            }
+        }
+
+        &-info {
+            font-size: smaller;
+            font-weight: 700;
+
+        }
+    }
+
+    &-complete {
+        // .number {
+        //     font-size: 6rem;
+        //     font-weight: bolder;
+        //     background: -webkit-linear-gradient(rgba(124, 115, 244, 0.5), rgba(226, 119, 179, 0.5));
+        //     -webkit-background-clip: text;
+        //     -webkit-text-fill-color: transparent;
+        // }
+        opacity: 0.5;
+    }
+}
+
+body[data-layout-mode="dark"] {
+    
+    .steps {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include r(450) {
+            display: block;
+        }
+
+        &-card {
+            width: 28%;
+            position: relative;
+
+            &-icon {
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                top: 50%;
+                right: -50px;
+
+                @include r(768) {
+                    right: -15px;
+                    top: 40%;
+                }
+
+                @include r(450) {
+                    width: 0px;
+                    height: 0px;
+                }
+            }
+
+            @include r(768) {
+                width: 30%;
+            }
+
+            @include r(450) {
+                width: 100%;
+            }
+
+            .number {
+                font-size: 6rem;
+                font-weight: bolder;
+                background: linear-gradient(180deg, rgba(248, 150, 34, 1) 50%, rgba(0,0,0,1) 75%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &-title-container {
+                margin-top: -30px;
+            }
+
+            &-title {
+                font-weight: 700;
+                font-size: large;
+                position: relative;
+
+                .custom-border {
+                    position: absolute;
+                    width: 40px;
+                    background: linear-gradient(90deg, rgba(248, 150, 34, 1) 100%, rgba(0,0,0,1) 0%);
+                    height: 5px;
+                    bottom: -10px;
+                    left: 0;
+                }
+            }
+
+            &-info {
+                font-size: smaller;
+                font-weight: 700;
+
+            }
+        }
+
+        &-complete {
+            // .number {
+            //     font-size: 6rem;
+            //     font-weight: bolder;
+            //     background: -webkit-linear-gradient(rgba(124, 115, 244, 0.5), rgba(226, 119, 179, 0.5));
+            //     -webkit-background-clip: text;
+            //     -webkit-text-fill-color: transparent;
+            // }
+            opacity: 0.5;
+        }
+    }
+}
+
+.manager-card {
+    @include r-between("1023px", "0px") {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.dashboard {
+    .myrow {
+        display: grid;
+        grid-template-columns: 78% 1fr;
+        gap: 1em;
+    }
+
+    .steps-card-icon {
+        cursor: pointer;
+    }
+
+    .right-col {
+        background-color: white;
+        // background-image: url('../../../../images/bg/4.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+        background-size: 260px 100%;
+
+        .balance-card {
+            .btn-group {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+
+        .announcements {
+            padding: 30px;
+
+            &-details {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .activity-list {
+        padding: 20px;
+
+        .activity {
+            &-info {
+                font-size: 10px;
+                color: #465c70;
+            }
+        }
+    }
+
+    .left-col {
+        box-shadow: inset 0px 0px 20px 0px #ccc;
+        -moz-box-shadow: inset 0px 0px 20px 0px #ccc;
+        -webkit-box-shadow: inset 0px 0px 20px 0px #ccc;
+    }
+
+    .balance-card {
+        .balance-card-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 6px;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+    }
+
+    &-crypto-card {
+        background: transparent;
+    }
+
+    .slider-wrap {
+        position: absolute;
+        top: 20%;
+        right: 60px;
+        text-align: center;
+
+        @include r(767) {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // flex-direction: column;
+            // right:10%;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .slider-title {
+        // color: #340762;
+        color: white;
+
+        &:nth-child(1) {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        &:nth-child(2) {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: -20px;
+        }
+
+        &:nth-child(4) {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+
+    .dashboard-button {
+        visibility: hidden;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+    }
+
+    .crypto-card:hover .dashboard-button {
+        visibility: visible;
+    }
+
+    .crypto-card-container {
+        width: 270px;
+    }
+}
+
+@include dark {
+    .dashboard {
+        .left-col {
+            box-shadow: inset 0 0 10px #1a1e25;
+            -moz-box-shadow: inset 0 0 10px #1a1e25;
+            -webkit-box-shadow: inset 0 0 10px #1a1e25;
+        }
+
+        .right-col {
+            background-color: $main-dark-bg;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+import React from "react";
+
+export default function dashboardSvg(props) {
+  const { color, fill } = props;
+  return (
+    <svg  width="25" height="25" viewBox="0 0 20 20" fill={fill} xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#clip0_327_253)">
+        <path d="M4.64342 8.5715C6.81311 8.5715 8.57199 6.81262 8.57199 4.64293C8.57199 2.47324 6.81311 0.714355 4.64342 0.714355C2.47373 0.714355 0.714844 2.47324 0.714844 4.64293C0.714844 6.81262 2.47373 8.5715 4.64342 8.5715Z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M15.3583 8.5715C17.5279 8.5715 19.2868 6.81262 19.2868 4.64293C19.2868 2.47324 17.5279 0.714355 15.3583 0.714355C13.1886 0.714355 11.4297 2.47324 11.4297 4.64293C11.4297 6.81262 13.1886 8.5715 15.3583 8.5715Z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M4.64342 19.2859C6.81311 19.2859 8.57199 17.527 8.57199 15.3573C8.57199 13.1876 6.81311 11.4287 4.64342 11.4287C2.47373 11.4287 0.714844 13.1876 0.714844 15.3573C0.714844 17.527 2.47373 19.2859 4.64342 19.2859Z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M15.3583 19.2859C17.5279 19.2859 19.2868 17.527 19.2868 15.3573C19.2868 13.1876 17.5279 11.4287 15.3583 11.4287C13.1886 11.4287 11.4297 13.1876 11.4297 15.3573C11.4297 17.527 13.1886 19.2859 15.3583 19.2859Z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_327_253">
+          <rect width="20" height="20" fill={fill} />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}

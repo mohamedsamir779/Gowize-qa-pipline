@@ -1,0 +1,36 @@
+.transparentbar {
+    background-repeat:no-repeat;
+    cursor:pointer;
+    outline:none !important;
+    border:none !important;
+    box-shadow:none !important; 
+    background-image: none !important;
+
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    padding:0 !important;
+}
+[data-title] {
+	font-size: 13px;
+	position: relative;
+	cursor: help;
+}
+  
+[data-title]:hover::before {
+	content: attr(data-title);
+	position: absolute;
+	bottom: -46px;
+	padding: 10px;
+
+	background: rgb(214, 127, 127);
+	color: #fff;
+	font-size: 13px;
+	white-space: nowrap;
+}
+.bold{
+    font-weight:bold;
+}
+.center-vertically{
+    margin: auto 0;
+}

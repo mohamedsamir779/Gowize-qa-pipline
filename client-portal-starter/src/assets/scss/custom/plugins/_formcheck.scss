@@ -1,0 +1,14 @@
+.custom-form-check-input {
+    width: 17px;
+    height: 17px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    &:checked {}
+}
+
+@include dark {
+    .custom-form-check-input {
+        border: 2px solid white;
+
+        &:checked {}
+    }
+}

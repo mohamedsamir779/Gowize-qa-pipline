@@ -1,0 +1,7 @@
+.TVChartContainer {
+	height: calc(100vh - 80px);
+	margin-left: 10px;
+}
+.link-blue {
+	color: #0d6efd;
+}

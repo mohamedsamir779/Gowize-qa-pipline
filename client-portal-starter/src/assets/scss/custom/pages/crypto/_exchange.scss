@@ -1,0 +1,30 @@
+// buy/sell buttons
+.buysell {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  transition: all .2s ease;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.full-height {
+  height: 88vh;
+  @include r(991) {
+    height: 100%;
+  }
+}
+
+.custom-height {
+  height: 35.6vh;
+  @include r(991) {
+    height: 100%;
+  }
+}
+
+@include rmin(992) {
+  .tab-content > .tab-pane-custom {
+      display: block;
+  }
+}

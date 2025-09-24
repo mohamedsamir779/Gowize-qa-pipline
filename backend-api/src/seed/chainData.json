@@ -1,0 +1,155 @@
+[{
+  "active": true,
+  "name": "Ethereum",
+  "symbol": "ETH",
+  "rpc": {
+    "host": "https://eth.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "testnetRpc": {
+    "host": "https://eth.getblock.io/goerli/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://etherscan.io/tx/",
+  "address": "https://etherscan.io/address/",
+  "cryptoapiName": "ethereum",
+  "hasTokens": true
+},{
+  "active": true,
+  "name": "Tron",
+  "symbol": "TRX",
+  "rpc": {
+    "host": "https://trx.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://tronscan.org/#/transaction/",
+  "address": "https://tronscan.org/#/address/",
+  "cryptoapiName": "tron",
+  "hasTokens": true
+},{
+  "active": true,
+  "name": "Litecoin",
+  "symbol": "LTC",
+  "rpc": {
+    "host": "https://ltc.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://litecoinblockexplorer.net/tx/",
+  "address": "https://litecoinblockexplorer.net/address",
+  "cryptoapiName": "litecoin",
+  "hasTokens": false
+},{
+  "active": true,
+  "name": "Bitcoin",
+  "symbol": "BTC",
+  "rpc": {
+    "host": "https://btc.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "testnetRpc": {
+    "host": "https://btc.getblock.io/testnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://www.blockchain.com/btc/tx/",
+  "address": "https://www.blockchain.com/btc/address/",
+  "cryptoapiName": "bitcoin",
+  "hasTokens": true
+},{
+  "active": false,
+  "name": "Monero",
+  "symbol": "XRP",
+  "rpc": {
+    "host": "https://xmr.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://localmonero.co/blocks/tx/"
+},{
+  "active": true,
+  "name": "Dash",
+  "symbol": "DASH",
+  "rpc": {
+    "host": "https://dash.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://blockchair.com/dash/transaction/",
+  "address": "https://blockchair.com/dash/address/",
+  "cryptoapiName": "dash",
+  "hasTokens": false
+},{
+  "active": false,
+  "name": "Solana",
+  "symbol": "SOL",
+  "rpc": {
+    "host": "https://sol.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://explorer.solana.com/tx",
+  "address": "https://explorer.solana.com/address/",
+  "hasTokens": false
+},{
+  "active": false,
+  "name": "Bitcoin Cash",
+  "symbol": "BCH",
+  "rpc": {
+    "host": "https://bch.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://blockchair.com/bitcoin-cash/transaction/",
+  "address": "https://blockchair.com/bitcoin-cash/address/",
+  "cryptoapiName": "bitcoin-cash",
+  "hasTokens": false
+},{
+  "active": false,
+  "name": "Stellar",
+  "symbol": "XLM",
+  "rpc": {
+    "host": "https://xlm.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://stellarchain.io/transactions/",
+  "address": "https://stellarchain.io/accounts/"
+},{
+  "active": false,
+  "name": "Cardano",
+  "symbol": "ADA",
+  "rpc": {
+    "host": "https://ada.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://explorer.cardano.org/en/transaction?id=",
+  "address": "https://explorer.cardano.org/en/address?address="
+},{
+  "active": false,
+  "name": "Ripple",
+  "symbol": "XRP",
+  "rpc": {
+    "host": "https://xrp.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://xrpscan.com/tx/",
+  "address": "https://xrpscan.com/account/",
+  "cryptoapiName": "xrp",
+  "hasTokens": false
+},{
+  "active": true,
+  "name": "DogeCoin",
+  "symbol": "DOGE",
+  "rpc": {
+    "host": "https://doge.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://dogechain.info/tx/",
+  "address": "https://dogechain.info/address/",
+  "cryptoapiName": "dogecoin",
+  "hasTokens": false
+},{
+  "active": false,
+  "name": "Polkadot",
+  "symbol": "DOT",
+  "rpc": {
+    "host": "https://dot.getblock.io/mainnet/",
+    "key": "9b6b2501-2c4b-4b93-a427-b719758a128d"
+  },
+  "blockchain": "https://explorer.polkascan.io/polkadot/transaction/",
+  "address": "https://explorer.polkascan.io/polkadot/account/"
+}]

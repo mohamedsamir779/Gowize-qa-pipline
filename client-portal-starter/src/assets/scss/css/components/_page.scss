@@ -1,0 +1,101 @@
+.page {
+	overflow: hidden;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		padding-left: 255px;
+		transition: padding .2s;
+		@include r(1179) {
+			padding-left: 96px; }
+		@include t {
+			padding-left: 0;
+			transition: transform .2s; } }
+	&__container {
+		padding: 0 64px 64px;
+		@include x {
+			padding: 0 48px 64px; }
+		@include d {
+			padding: 0 64px 64px; }
+		@include m {
+			padding: 0 16px 32px; }
+		&_exchange {
+			@include m {
+				padding-bottom: 0; } } }
+	&__row {
+		display: flex;
+		flex-grow: 1;
+		@include w {
+			padding: 0 64px 64px; }
+		@include x {
+			padding: 0 48px 64px; }
+		@include d {
+			display: block;
+			padding: 0 64px 64px; }
+		@include m {
+			padding: 0 16px 32px; } }
+	&__col {
+		padding: 0 64px 64px;
+		@include w {
+			padding: 0; }
+		&:first-child {
+			flex: 0 0 calc(100% - 426px);
+			max-width: calc(100% - 426px);
+			@include w {
+				flex: 0 0 calc(100% - 290px);
+				max-width: calc(100% - 290px);
+				padding-right: 64px; }
+			@include x {
+				padding-right: 48px; }
+			@include d {
+				max-width: 100%;
+				margin-bottom: 64px;
+				padding: 0; }
+			@include m {
+				margin-bottom: 42px; } }
+		&:nth-child(2) {
+			flex: 0 0 426px;
+			width: 426px;
+			border-left: 1px solid $gray-light;
+			@include w {
+				flex: 0 0 290px;
+				width: 290px;
+				border: none; }
+			@include d {
+				width: 100%; } }
+		&_pt100 {
+			padding-top: 100px; }
+		&_pt198 {
+			padding-top: 198px; } }
+	&__head {
+		margin-top: -80px;
+		margin-bottom: 32px;
+		@include t {
+			margin-top: 0; }
+		@include m {
+			margin-bottom: 24px; } }
+	&__category {
+		@include m {
+			font-size: 18px; } }
+	&__title {
+		@include m {
+			font-size: 32px; } }
+	&__col > &__title {
+		margin-bottom: 32px; }
+	&.wide &__content,
+	&.full &__content {
+		padding-left: 96px;
+		@include t {
+			padding: 0; } }
+	&.full.wide &__content {
+		padding-left: 96px;
+		@include t {
+			padding: 0; } }
+	&.toggle &__content {
+		@include t {
+			transform: translateX(255px); } } }
+
+@include dark {
+	.page {
+		&__col:nth-child(2) {
+			border-color: $dark-border; } } }

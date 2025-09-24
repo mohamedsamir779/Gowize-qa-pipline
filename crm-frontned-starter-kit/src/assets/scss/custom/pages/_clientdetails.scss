@@ -1,0 +1,137 @@
+
+
+.quick-actions-card{
+    .quick-actions-heading{
+        font-weight: $font-weight-bold;
+        margin-bottom: $paragraph-margin-bottom;
+    }
+    
+    .quick-actions-heading::after{
+        content: "";
+        height: 2px;
+        display: block;
+        background: linear-gradient(90deg,rgba(0,0,0,.5),transparent 50%,transparent);
+        margin: 0.5rem 0 0.2rem;
+    }
+    .btn-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: calc($spacer / 2);
+    }
+    .btn {
+        font-size: $btn-font-size-sm;
+    }
+}
+
+.client-detail-header{
+    display: grid;
+    .name {
+        grid-area: name;
+    }
+    display: grid;
+    .hierarchy {
+        grid-area: hierarchy;
+    }
+    .date {
+        grid-area: date;
+    }
+    .status {
+        grid-area: status;
+    }
+    .category {
+        grid-area: category;
+    }
+    .stage {
+        grid-area: stage;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .client-detail-header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "name hierarchy"
+            "date status"
+            "category stage";
+        margin-bottom: 1rem;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .client-detail-header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "name hierarchy date"
+        "status category stage";
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .client-detail-header {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "name hierarchy date status category stage";
+        margin-bottom: 0rem;
+    }
+}
+
+.page-menues {
+    a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // max-width: 120px;
+    }
+}
+
+// .page-menues{
+//     display: grid;
+//     .item-1 {
+//         grid-area: item-1;
+//     }
+//     .item-2 {
+//         grid-area: item-2;
+//     }
+//     .item-3 {
+//         grid-area: item-3;
+//     }
+//     .item-4 {
+//         grid-area: item-4;
+//     }
+//     .item-5 {
+//         grid-area: item-5;
+//     }
+//     .item-6 {
+//         grid-area: item-6;
+//     }
+//     .item-7 {
+//         grid-area: item-7;
+//     }
+//     .item-8 {
+//         grid-area: item-8;
+//     }
+// }
+
+// @include media-breakpoint-down(xs) {
+//     .page-menues {
+//         grid-template-columns: 1fr 1fr 1fr;
+//         grid-template-areas: "item-1 item-2 item-3"
+//             "item-4 item-5 item-6"
+//             "item-7 item-8";
+//         margin-bottom: 1rem;
+//     }
+// }
+
+// @include media-breakpoint-up(sm) {
+//     .page-menues {
+//         grid-template-columns: 1fr 1fr 1fr 1fr;
+//         grid-template-areas: "item-1 item-2 item-3 item-4"
+//             "item-5 item-6  item-7 item-8";
+//     }
+// }
+
+// @include media-breakpoint-up(md) {
+//     .page-menues {
+//         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+//         grid-template-areas: "item-1 item-2 item-3 item-4 item-5 item-6 item-7 item-8";
+//         margin-bottom: 0rem;
+//     }
+// }
+

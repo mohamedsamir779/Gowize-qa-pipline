@@ -1,0 +1,16 @@
+import React from "react";
+
+export default function depositSvg(props) {
+  const { fill } = props;
+  return (
+    <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.8583 10.7143C16.4087 10.7143 19.2868 9.4351 19.2868 7.85714C19.2868 6.27919 16.4087 5 12.8583 5C9.30786 5 6.42969 6.27919 6.42969 7.85714C6.42969 9.4351 9.30786 10.7143 12.8583 10.7143Z" stroke={fill} strokeWidth="1.42857" strokeLinecap="round"/>
+      <path d="M6.42969 7.85693V16.4284C6.42969 17.9998 9.28683 19.2855 12.8583 19.2855C16.4297 19.2855 19.2868 17.9998 19.2868 16.4284V7.85693" stroke={fill} strokeWidth="1.42857" strokeLinecap="round" />
+      <path d="M19.2868 12.1431C19.2868 13.7145 16.4297 15.0002 12.8583 15.0002C9.28683 15.0002 6.42969 13.7145 6.42969 12.1431" stroke={fill} strokeWidth="1.42857" strokeLinecap="round" />
+      <path d="M12.7148 2.14277C11.0455 1.11259 9.10246 0.614364 7.14342 0.714198C3.58627 0.714198 0.714844 1.99991 0.714844 3.57134C0.714844 4.4142 1.54342 5.17134 2.8577 5.7142" stroke={fill} strokeWidth="1.42857" strokeLinecap="round" />
+      <path d="M2.8577 14.2856C1.54342 13.7427 0.714844 12.9856 0.714844 12.1427V3.57129" stroke={fill} strokeWidth="1.42857" strokeLinecap="round" />
+      <path d="M2.8577 9.99979C1.54342 9.45693 0.714844 8.69979 0.714844 7.85693" stroke={fill} strokeWidth="1.42857" strokeLinecap="round" />
+    </svg>
+
+  );
+}

@@ -1,0 +1,53 @@
+//
+// _card.scss
+//
+
+.card {
+  margin-bottom: $grid-gutter-width;
+  background-color: transparent;
+}
+
+.card-drop {
+  color: $body-color;
+}
+
+.card-title {
+  font-size: 15.4px;
+  margin: 0 0 7px 0;
+  color: #495057;
+  font-weight: 600;
+}
+
+.card-border-0 {
+  border: 0;
+}
+
+.card-title-desc,
+.card-subtitle {
+  color: $card-title-desc;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.card-header-tabs {
+  margin-top: -$card-cap-padding-y;
+}
+
+.card-header-pills {
+  margin: -(calc($card-cap-padding-y / 2));
+}
+
+body[data-layout-mode="dark"] {
+
+  .card,
+  .card-header,
+  .modal-content,
+  .offcanvas {
+    background-color: #0B182F;
+    border-color: lighten(rgba(35, 38, 47,0.9), 4%);
+  }
+
+  .card-title-desc {
+    color: $gray-dark-400;
+  }
+}

@@ -1,0 +1,82 @@
+.crypto-card {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: $white;
+    box-shadow: 0 8px 25px rgba(#000, .07);
+    min-height: 80px;
+    @include m {
+        max-width: 100%;
+        margin: 0;
+
+        @include nl {
+            margin-bottom: 32px;
+        }
+    }
+
+    &-head {
+        margin-top: 20px;
+
+        .crypto-title{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 20px 20px 0 20px;
+            .title-left {
+                display: flex;
+                justify-content: flex-start;
+                div{
+                    align-self: center;
+                }
+            }
+            .title-right {
+                // display: flex;
+                justify-content: end;
+                .price {
+                    font-size: $font-size-sm;
+                }
+            }
+            .positive{
+                color: $profit;
+            }
+            .negative{
+                color: $loss;
+            }
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+    }
+
+    &-body {
+        padding: 10px;
+        position: relative;
+        &-content{
+            position: absolute;
+            bottom: 3.2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        div:first-child {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            // margin-bottom: 12px;
+            grid-gap: 10px;
+            gap: 10px;
+        }
+    }
+    .crypto-footer {
+        button {
+            border-radius: 0px 0px 25px 25px;
+        }
+    }
+}

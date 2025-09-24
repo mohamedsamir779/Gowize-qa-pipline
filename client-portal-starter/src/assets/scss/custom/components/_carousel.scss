@@ -1,0 +1,14 @@
+.carousel-indicators-rounded {
+    button{
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50% !important;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    display: none;
+}
+.slider .owl-carousel button.owl-dot{
+    height: 4px !important;
+}

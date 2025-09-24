@@ -1,0 +1,24 @@
+
+body[data-layout-mode="dark"] {
+    background-color: #111A26;
+    color: #F89622;
+
+
+    .h1,.h2,.h3,.h4,.h5,.h6,
+    h1,h2,h3,h4,h5,h6 {
+        color: $gray-dark-600;
+    }
+    
+    .color-primary, label {
+        color: #F89622;
+    }
+    span, thead {
+        color: #fff;
+    }
+}
+
+body {
+    .color-primary {
+        color: $light-primary;
+    }
+}

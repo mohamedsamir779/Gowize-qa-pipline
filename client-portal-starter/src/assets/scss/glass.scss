@@ -1,0 +1,73 @@
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+}
+
+body[data-layout-mode="dark"] {
+  .glass-card {
+    background: #0B182F;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .color-primary, .text-primary {
+    color: $dark-primary !important;
+  }
+
+  .color-text {
+    color: #fff;
+  }
+}
+
+.color-primary, .text-primary {
+  color: $light-primary !important;
+}
+
+.color-secondary {
+  color: #f50057;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-text {
+  color: #000;
+}
+
+.color-btn {
+  color: #00C6C1;
+}
+
+// custom css font from css
+.font-weight-[number] {
+  font-weight: [number];
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+//  Background color
+
+.color-bg-btn {
+  background: $light-primary !important;
+  color: white;
+}
+
+body[data-layout-mode="dark"] {
+  .color-bg-btn {
+    background: $dark-primary !important;
+    color: #fff !important;
+  }
+}
+
+.color-bg-primary {
+  background: #1C5C87;
+}
+
+.color-bg-secondary {
+  background: #f50057;
+}
+
+.color-bg-white {
+  background: #fff;
+}

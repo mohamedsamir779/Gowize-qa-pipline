@@ -1,0 +1,27 @@
+/** Api Success and fail */
+export const GET_TODOS_START = "GET_TODOS_START";
+export const GET_TODOS_END = "GET_TODOS_END";
+export const GET_REMINDERS_START = "GET_REMINDERS_START";
+export const GET_REMINDERS_END = "GET_REMINDERS_END";
+export const GET_NOTES_START = "GET_NOTES_START";
+export const GET_NOTES_END = "GET_NOTES_END";
+export const GET_REMARKS_START = "GET_REMARKS_START";
+export const GET_REMARKS_END = "GET_REMARKS_END";
+
+export const ADD_TODO_START = "ADD_TODO_START";
+export const ADD_TODO_END = "ADD_TODO_END";
+export const ADD_REMINDER_START = "ADD_REMINDER_START";
+export const ADD_REMINDER_END = "ADD_REMINDER_END";
+export const ADD_NOTE_START = "ADD_NOTE_START";
+export const ADD_NOTE_END = "ADD_NOTE_END";
+export const ADD_REMARK_START = "ADD_REMARK_START";
+export const ADD_REMARK_END = "ADD_REMARK_END";
+export const ADD_TODO_CLEAR = "ADD_TODO_CLEAR";
+
+export const DELETE_TODO_START = "DELETE_TODO_START";
+export const DELETE_TODO_END = "DELETE_TODO_END";
+
+export const MODAL_CLEAR_ERROR = "MODAL_CLEAR_ERROR";
+
+export const EDIT_TODO_START = "EDIT_TODO_START";
+export const EDIT_TODO_END = "EDIT_TODO_END";

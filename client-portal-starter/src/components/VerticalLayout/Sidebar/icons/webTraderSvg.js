@@ -1,0 +1,12 @@
+import React from "react";
+
+export default function webTraderSvg(props) {
+  const { fill } = props;
+  return (
+    <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.0006 19.2858C15.1289 19.2858 19.2863 15.1284 19.2863 10.0001C19.2863 4.87171 15.1289 0.714355 10.0006 0.714355C4.8722 0.714355 0.714844 4.87171 0.714844 10.0001C0.714844 15.1284 4.8722 19.2858 10.0006 19.2858Z" stroke={fill} strokeWidth="1.42857" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M0.714844 10H19.2863" stroke={fill} strokeWidth="1.42857" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M13.5725 10.0001C13.3971 13.3958 12.1464 16.6477 10.0011 19.2858C7.85586 16.6477 6.60511 13.3958 6.42969 10.0001C6.60511 6.60437 7.85586 3.35243 10.0011 0.714355C12.1464 3.35243 13.3971 6.60437 13.5725 10.0001V10.0001Z" stroke={fill} strokeWidth="1.42857" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  );
+}

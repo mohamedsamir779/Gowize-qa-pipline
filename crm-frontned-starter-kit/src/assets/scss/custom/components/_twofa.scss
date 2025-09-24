@@ -1,0 +1,23 @@
+.twofa-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.twofa-input {
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 15px;
+    text-transform: uppercase;
+    border: 1px solid $darkblue;
+    &.active {
+        background-color: $darkblue;
+        color: white;
+        font-size: 2rem;
+    }
+}

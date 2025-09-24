@@ -1,0 +1,68 @@
+.quickbuy-search {
+    .btn {
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        height: 34px;
+        padding: 0 10px;
+    }
+}
+
+.quick-buy {
+
+    .positive-back {
+        background-color: #21ac75 !important;
+        color: white;
+    }
+
+    .negative-back {
+        background-color: #f7624e !important;
+        color: white;
+    }
+    
+    .quick-buy-button:nth-child(1){
+        background-color: #21ac7423;
+        -moz-transition: all 0.25s ease-in;
+        -o-transition: all 0.25s ease-in;
+        -webkit-transition: all 0.25s ease-in;
+        transition: all 0.25s ease-in;
+        &:hover {
+            background-color: #21ac75 !important;
+            color: white !important;
+        }
+    }
+
+    .quick-buy-button:nth-child(2) {
+        background-color: #f7624e23;
+        -moz-transition: all 0.25s ease-in;
+        -o-transition: all 0.25s ease-in;
+        -webkit-transition: all 0.25s ease-in;
+        transition: all 0.25s ease-in;
+        &:hover {
+            background-color: #f7624e !important;
+            color: white !important;
+        }
+    }
+
+    .crypto-card-body-content {
+        bottom: 3rem;
+    }
+}
+
+.nav-pills .nav-link.active {
+    background-color: #3771ff;
+}
+
+@include dark {
+    .quick-buy-button {
+        background-color: #2c2f38;
+    }
+
+    .quick-buy-button:nth-child(1):hover {
+        background-color: #21ac75;
+    }
+
+    .quick-buy-button:nth-child(2):hover {
+        background-color: #f7624e;
+    }
+}

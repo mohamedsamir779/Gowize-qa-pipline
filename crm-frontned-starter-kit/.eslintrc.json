@@ -1,0 +1,138 @@
+// {
+//   "env": {
+//     "es6": true,
+//     "browser": true,
+//     "commonjs": true,
+//     "node": true
+//   },
+//   "extends": [
+//     "eslint:recommended",
+//     "plugin:import/recommended",
+//     "plugin:react/recommended",
+//     "plugin:jsx-a11y/recommended"
+//   ],
+//   "parser": "@babel/eslint-parser",
+//   "parserOptions": {
+//     "requireConfigFile": false,
+//     "ecmaFeatures": {
+//       "jsx": true
+//     },
+//     "ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
+//     "sourceType": "module" // Allows for the use of imports
+//   },
+//   "plugins": ["react", "import", "jsx-a11y"],
+//   "settings": {
+//     "react": {
+//       "version": "detect"
+//     }
+//   },
+//   "rules": {
+//     "indent": ["error", 2, { "SwitchCase": 1 }],
+//     "quotes": ["error", "double"],
+//     "no-console": "warn",
+//     "no-duplicate-imports": "warn",
+//     "max-len": [
+//       "warn",
+//       {
+//         "code": 120
+//       }
+//     ],
+//     "no-unused-vars": "warn",
+//     "object-curly-spacing": [
+//       "warn",
+//       "always"
+//     ],
+//     "react/jsx-curly-spacing": [
+//       "warn",
+//       {
+//         "allowMultiline": true,
+//         "children": {
+//           "when": "always"
+//         },
+//         "spacing": {
+//           "objectLiterals": "always"
+//         },
+//         "when": "always"
+//       }
+//     ],
+//     "react/jsx-indent": [
+//       "error",
+//       2,
+//       {
+//         "checkAttributes": true,
+//         "indentLogicalExpressions": true
+//       }
+//     ],
+//     "react/jsx-indent-props": [
+//       "error",
+//       4
+//     ]
+//   }
+// }
+{
+  "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+      "requireConfigFile": false,
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "babelOptions": {
+        "presets": ["@babel/preset-react"]
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "quotes": ["error", "double"],
+    "no-console": "warn",
+    "no-duplicate-imports": "warn",
+    "comma-spacing": [2, {"before": false, "after": true}],
+    "space-infix-ops": ["error", { "int32Hint": false }],
+    "keyword-spacing": ["error", { "before": true }],
+    "semi": ["error", "always", { "omitLastInOneLineBlock": true }],
+    "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": false }],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0 }],
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": { "multiline": true, "consistent": true },
+      "ObjectPattern": { "multiline": true, "consistent": true },
+      "ImportDeclaration": { "multiline": true, "minProperties": 3, "consistent": true },
+      "ExportDeclaration": { "multiline": true, "minProperties": 3, "consistent": true }
+    }],
+    "array-element-newline": ["error", {
+      "ArrayExpression": "consistent",
+      "ArrayPattern": { "minItems": 3 }
+    }],
+    "no-unused-vars": "warn",
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      2
+    ],
+    "no-empty": "off",
+    "react/prop-types": "off",
+    "no-extra-boolean-cast": "off",
+    "react/react-in-jsx-scope": 0
+  }
+}

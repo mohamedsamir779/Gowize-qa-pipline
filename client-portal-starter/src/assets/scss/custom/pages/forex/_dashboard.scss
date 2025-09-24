@@ -1,0 +1,72 @@
+.forex-dashboard {
+    .accounts-tab {
+        .btn-group {
+            .blue-gradient-color {
+                color: white;
+            }
+
+            .btn {
+                border: 1px solid $f-primary;
+
+                &:first-child {
+                    border-right: 0
+                }
+
+                &:last-child {
+                    border-left: 0
+                }
+            }
+        }
+
+        .acc-tab-card {
+            cursor: pointer;
+            border-radius: 10px;
+            position: relative;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border: 1px solid $f-white-grey;
+
+            .dropdown-toggle {
+                &:focus {
+                    box-shadow: unset;
+                }
+            }
+
+            &-title {
+                font-size: 0.9rem;
+                font-weight: bold;
+            }
+
+            &-desc {
+                font-weight: bold;
+            }
+
+            &-icon {}
+
+            &.active {
+                border: 1px solid $f-primary;
+            }
+        }
+
+        .buttons-row {
+            display: flex;
+            justify-content: space-between;
+
+            @include r(451) {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .heading {
+        border-bottom: 1px solid $f-white-grey;
+    }
+
+    .desc {
+        * {
+            padding: 1px 0px;
+        }
+    }
+}

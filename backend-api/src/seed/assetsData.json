@@ -1,0 +1,535 @@
+[{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": false,
+  "active": true,
+  "name": "USD Fiat Asset",
+  "symbol": "USD",
+  "description": "Test Description",
+  "markup": "0.01",
+  "fee": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  },
+  "explorerLink": "string",
+  "minAmount": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "USDT Crypto Asset",
+  "symbol": "USDT",
+  "description": "test",
+  "markup": "0.01",
+  "fee": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  },
+  "explorerLink": "string",
+  "minAmount": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  },
+  "networks": [
+    {
+      "name": "Ethereum",
+      "tokenAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+    },
+    {
+      "name": "Tron",
+      "tokenAddress": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+    }
+  ],
+  "token": true
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "links": [],
+  "active": true,
+  "symbol": "BTC",
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "name": "Bitcoin",
+  "description": "BTC",
+  "markup": "0.01",
+  "explorerLink": "0",
+  "image": "asset_1681289370652_bitcoin-icon.png",
+  "networks": [
+    {
+      "name": "Bitcoin"
+    }
+  ],
+  "token": false
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "links": [],
+  "active": true,
+  "name": "Cardano",
+  "symbol": "ADA",
+  "description": "ADA",
+  "markup": "ADA",
+  "explorerLink": "1",
+  "networks": [
+    {
+      "name": "Ethereum"
+    }
+  ],
+  "fee": {
+    "deposit": "1",
+    "withdrawal": "1"
+  },
+  "minAmount": {
+    "deposit": "1",
+    "withdrawal": "1"
+  },
+  "token": true
+}, {
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "links": [],
+  "active": true,
+  "name": "XRP Asset",
+  "symbol": "XRP",
+  "description": "XRP Asset",
+  "markup": "0.1",
+  "explorerLink": "XRP Asset",
+  "fee": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  },
+  "minAmount": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "links": [],
+  "active": true,
+  "name": "DOT",
+  "symbol": "DOT",
+  "description": "DOT",
+  "markup": "0",
+  "explorerLink": "0",
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "links": [],
+  "active": true,
+  "name": "UNI",
+  "symbol": "UNI",
+  "description": "UNI",
+  "markup": "0",
+  "explorerLink": "UNI",
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "links": [],
+  "active": true,
+  "name": "BCH",
+  "symbol": "BCH",
+  "description": "BCH",
+  "markup": "0",
+  "explorerLink": "BCH",
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  }
+}, {
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "links": [],
+  "active": true,
+  "name": "XMR",
+  "symbol": "XMR",
+  "description": "XMR",
+  "markup": "0",
+  "explorerLink": "0",
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  }
+}, {
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "links": [],
+  "active": true,
+  "name": "Link Asset",
+  "symbol": "LINK",
+  "description": "Link Asset",
+  "markup": "0.1",
+  "explorerLink": "test",
+  "networks": [
+    {
+      "name": "Ethereum",
+      "tokenAddress": "0x514910771AF9Ca656af840dff83E8264EcF986CA"
+    }
+  ],
+  "fee": {
+    "deposit": "0.1",
+    "withdrawal": ".01"
+  },
+  "minAmount": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  },
+  "token": true
+}, {
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "ETH Crypto Asset",
+  "symbol": "ETH",
+  "description": "test",
+  "markup": "0.01",
+  "fee": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  },
+  "networks": [
+    {
+      "name": "Ethereum"
+    }
+  ],
+  "explorerLink": "string",
+  "minAmount": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  },
+  "token": false
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": false,
+  "active": true,
+  "name": "EUR Fiat Asset",
+  "symbol": "EUR",
+  "description": "test",
+  "markup": "0.01",
+  "fee": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  },
+  "explorerLink": "string",
+  "minAmount": {
+    "deposit": "0.1",
+    "withdrawal": "0.1"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "ETC",
+  "symbol": "ETC",
+  "description": "ETC",
+  "markup": "0",
+  "explorerLink": "ETC",
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "MKR",
+  "symbol": "MKR",
+  "description": "asd",
+  "markup": "0.1",
+  "explorerLink": "test",
+  "networks": [
+    {
+      "name": "Ethereum",
+      "tokenAddress": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
+    }
+  ],
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "token": true
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "CHZ",
+  "symbol": "CHZ",
+  "description": "asd",
+  "markup": "0.1",
+  "explorerLink": "test",
+  "networks": [
+    {
+      "name": "Ethereum",
+      "tokenAddress": "0x3506424F91fD33084466F402d5D97f05F8e3b4AF"
+    }
+  ],
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "token": true
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "TRX",
+  "symbol": "TRX",
+  "description": "TRX",
+  "explorerLink": "0",
+  "networks": [
+    {
+      "name": "Tron"
+    }
+  ],
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "token": false
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "DOGE",
+  "symbol": "DOGE",
+  "description": "DOGE",
+  "markup": "DOGE",
+  "explorerLink": "1",
+  "networks": [
+    {
+      "name": "DogeCoin"
+    }
+  ],
+  "fee": {
+    "deposit": "1",
+    "withdrawal": "1"
+  },
+  "minAmount": {
+    "deposit": "1",
+    "withdrawal": "1"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "links": [],
+  "active": true,
+  "name": "LTC",
+  "symbol": "LTC",
+  "description": "LTC",
+  "markup": "0",
+  "explorerLink": "0",
+  "networks": [
+    {
+      "name": "litecoin"
+    }
+  ],
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "SOL",
+  "symbol": "SOL",
+  "description": "SOL",
+  "markup": "0",
+  "explorerLink": "0",
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "BNB",
+  "symbol": "BNB",
+  "description": "BNB",
+  "markup": "0",
+  "explorerLink": "0",
+  "networks": [
+    {
+      "name": "Ethereum",
+      "tokenAddress": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52"
+    }
+  ],
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "token": true
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "SHIB",
+  "symbol": "SHIB",
+  "description": "asd",
+  "markup": "0.1",
+  "explorerLink": "test",
+  "networks": [
+    {
+      "name": "Ethereum",
+      "tokenAddress": "0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE"
+    }
+  ],
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  }
+},{
+  "disabled": {
+    "deposit": false,
+    "withdrawal": false
+  },
+  "isCrypto": true,
+  "active": true,
+  "name": "MATIC",
+  "symbol": "MATIC",
+  "description": "asd",
+  "markup": "0.1",
+  "explorerLink": "test",
+  "networks": [
+    {
+      "name": "Ethereum",
+      "tokenAddress": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0"
+    }
+  ],
+  "fee": {
+    "deposit": "0",
+    "withdrawal": "0"
+  },
+  "minAmount": {
+    "deposit": "0",
+    "withdrawal": "0"
+  }
+}]

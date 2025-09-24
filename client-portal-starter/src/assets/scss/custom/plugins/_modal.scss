@@ -1,0 +1,130 @@
+.custom-modal {
+    position: relative;
+
+    .modal-header {
+        position: relative;
+        border-bottom: 0;
+
+        button {
+            top: -22px;
+            right: -22px;
+        }
+    }
+
+    .modal-body {
+        margin-top: -30px;
+        padding: 2rem;
+    }
+
+    .modal-content {
+        @include r(1211) {
+            margin-top: 2rem;
+        }
+
+        @include r(576) {
+            margin-top: 2.5rem;
+        }
+
+        @include dark {
+            background: #1a2a3e;
+        }
+
+        // overflow: hidden;
+    }
+
+    .modal-steps {
+        position: absolute;
+        left: -150px;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+        @include r(1210) {
+            top: -50px;
+            left: 0;
+            flex-direction: row;
+        }
+
+        @include r(576) {
+            top: -44px;
+            gap: 14px;
+            white-space: nowrap;
+        }
+
+        .step {
+            position: relative;
+            cursor: pointer;
+
+            &.active {
+                .btn {
+                    border: 1px solid #29b47f !important;
+                }
+            }
+
+            .number {
+                margin-right: 10px;
+                box-shadow: 0 0px 0px 0 black;
+            }
+
+            .vl {
+                @include r(1210) {
+                    display: none;
+                }
+
+                &-1 {
+                    &:after {
+                        content: "";
+                        background: white;
+                        position: absolute;
+                        top: 42px;
+                        left: 17px;
+                        height: 10px;
+                        width: 1.3px;
+                    }
+                }
+
+                &-2 {
+                    &:after {
+                        content: "";
+                        background: white;
+                        position: absolute;
+                        top: 55px;
+                        left: 17px;
+                        height: 10px;
+                        width: 1.3px;
+                    }
+                }
+
+                &-3 {
+                    &:after {
+                        content: "";
+                        background: white;
+                        position: absolute;
+                        top: 69px;
+                        left: 17px;
+                        height: 10px;
+                        width: 1.3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.received-amount {
+    line-height: 50px;
+
+    span:first-child {
+        vertical-align: text-bottom;
+    }
+
+    span:nth-child(2) {
+        vertical-align: super;
+    }
+}
+
+@include dark {
+    .received-amount {
+        color: #dce1fe;
+    }
+}

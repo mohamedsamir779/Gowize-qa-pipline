@@ -1,0 +1,173 @@
+// media queries
+@mixin w {
+	@media only screen and (max-width: "1419px") {
+		@content;
+	}
+}
+
+@mixin x {
+	@media only screen and (max-width: "1339px") {
+		@content;
+	}
+}
+
+@mixin d {
+	@media only screen and (max-width: "1259px") {
+		@content;
+	}
+}
+
+@mixin t {
+	@media only screen and (max-width: "1023px") {
+		@content;
+	}
+}
+
+@mixin m {
+	@media only screen and (max-width: "767px") {
+		@content;
+	}
+}
+
+@mixin a {
+	@media only screen and (max-width: "639px") {
+		@content;
+	}
+}
+
+@mixin s {
+	@media only screen and (max-width: "474px") {
+		@content;
+	}
+}
+
+// fonts
+@mixin fi {
+	font-family: 'Inter', sans-serif;
+}
+
+@mixin fp {
+	font-family: 'Poppins', sans-serif;
+}
+
+@mixin fc {
+	font-family: 'Cairo';
+}
+
+$black: #11142D;
+$blue: #355DFF;
+$blue-light: #3F8CFF;
+$dark: #1B1D21;
+$gray: #808191;
+$gray-light: #E4E4E4;
+$purple: #6C5DD3;
+$pink: #FF98E5;
+$green: #4FBF67;
+$green-dark: #3DBAA2;
+$red: #FF6628;
+$red-light: #FF7A68;
+$orange: #FF9F38;
+$white: #ffffff;
+$pink: #e50c72;
+// dark theme
+$dark-bg: #1F2128;
+$dark-border: rgba($gray-light, .1);
+$dark-active: #23262f;
+$dark-color: #242731;
+
+$box-shadow-sm: 0 0rem .25rem rgba($black, .075);
+$box-shadow: -0.25rem 0.25rem 0.75rem rgba(18, 38, 63, .08);
+$box-shadow-lg: 0 0rem 1rem rgba($black, 0.1);
+$box-shadow-inset: inset 0 1px 2px rgba($black, .075);
+
+$gradient-purple: radial-gradient(103.03% 103.03% at 0% 0%, #D080FF 0%, #6C5DD3 100%);
+$gradient-green: linear-gradient(223.58deg, #86E1A0 12.52%, #4FBF67 75.73%);
+
+@mixin h1 {
+	@include fp;
+	font-size: 56px;
+	line-height: calc(64/56);
+	letter-spacing: -1px;
+	font-weight: 600;
+}
+
+@mixin h2 {
+	@include fp;
+	font-size: 48px;
+	line-height: calc(56/48);
+	letter-spacing: -1px;
+	font-weight: 600;
+}
+
+@mixin h3 {
+	@include fp;
+	font-size: 40px;
+	line-height: calc(48/40);
+	letter-spacing: -1px;
+	font-weight: 600;
+}
+
+@mixin h4 {
+	@include fp;
+	font-size: 32px;
+	line-height: calc(40/32);
+	letter-spacing: -.5px;
+	font-weight: 500;
+}
+
+@mixin h5 {
+	@include fp;
+	font-size: 24px;
+	line-height: calc(32/24);
+	font-weight: 500;
+}
+
+@mixin h6 {
+	@include fp;
+	font-size: 18px;
+	line-height: calc(24/18);
+	font-weight: 500;
+}
+
+@mixin title {
+	font-size: 16px;
+	line-height: calc(20/16);
+	font-weight: 600;
+}
+
+@mixin caption-lg {
+	font-size: 13px;
+	line-height: calc(16/13);
+	font-weight: 500;
+}
+
+@mixin caption-sm {
+	font-size: 12px;
+	line-height: calc(16/12);
+	font-weight: 500;
+}
+
+@mixin caption-input {
+	font-size: 10px;
+	font-weight: 700;
+	line-height: calc(16/10);
+	letter-spacing: .9px;
+	text-transform: uppercase;
+}
+
+@mixin button-lg {
+	font-weight: 700;
+}
+
+@mixin button-sm {
+	font-size: 13px;
+	line-height: calc(20/13);
+	font-weight: 700;
+}
+
+@mixin chip {
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}

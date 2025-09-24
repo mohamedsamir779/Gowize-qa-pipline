@@ -1,0 +1,40 @@
+.page {
+    min-height: 100vh;
+}
+
+body[data-layout-mode="dark"] {
+    background-color: $main-dark-bg;
+    color: $gray-dark-600;
+
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $gray-dark-600;
+    }
+
+    label {
+        color: #F89622;
+    }
+
+    .auth-page {
+        background-color: #242632;
+        min-height: 100vh;
+    }
+
+    table {
+        --bs-table-hover-bg: #0A172C;
+        --bs-table-bg: #162334;
+        --bs-table-hover-color: #858D98;
+        --bs-table-color: #fff;
+    }
+}
