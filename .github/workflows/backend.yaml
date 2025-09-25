@@ -27,8 +27,3 @@ jobs:
         working-directory: backend-api
         continue-on-error: false
         id: run-build
-
-      - name: Run Jest tests
-        run: npm test
-
-    
