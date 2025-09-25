@@ -1,4 +1,4 @@
-name: Node.js Pipeline
+name: backend Pipeline
 on:
   push:
     branches:
