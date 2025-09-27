@@ -38,5 +38,3 @@ jobs:
       - run: pm2 start ecosystem.js --env=production       
         working-directory: backend-api
         continue-on-error: false
-      
-            pm2 restart ecosystem.config.js --env=production 
