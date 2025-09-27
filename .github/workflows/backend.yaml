@@ -1,40 +1,42 @@
-name: backend Pipeline
+name: Backend Pipeline
+
 on:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3 # Checks out the code from the repository
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
 
-      - name: Install dependencies with npm
+      - name: Install dependencies
         run: npm install
         working-directory: backend-api
-        continue-on-error: false
         id: install-dependencies
 
       - name: Run build
         run: npm run build
         working-directory: backend-api
-        continue-on-error: false
         id: run-build
 
-      - name: pm2 Gonfiguration
-      - uses: actions/checkout@v3 #checkout code from repository, so we code downloaded in runner.
-      - uses: actions/setup-node@v3 #setup nodejs in our runner
-      - run: npm install pm2@latest -g #install pm2 global
-      - run: pm2 -V #check pm2 version
-      - run: pm2 list #check pm2 list
-      #running pm2 in mode cluster and --watch set to auto restart if index.js have changes.
-      - run: pm2 start ecosystem.js --env=production       
+      - name: Install PM2 globally
+        run: npm install pm2@latest -g
+
+      - name: Show PM2 version
+        run: pm2 -V
+
+      - name: Show PM2 process list
+        run: pm2 list
+
+      - name: Start app with PM2
+        run: pm2 start ecosystem.js --env=production
         working-directory: backend-api
-        continue-on-error: false
