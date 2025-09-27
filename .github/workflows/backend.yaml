@@ -19,14 +19,9 @@ jobs:
           node-version: 16.x
 
       - name: Install dependencies
-        run: npm install
+        run: npm install 
         working-directory: backend-api
         id: install-dependencies
-
-      - name: Run build
-        run: npm run build
-        working-directory: backend-api
-        id: run-build
 
       - name: Install PM2 globally
         run: npm install pm2@latest -g
