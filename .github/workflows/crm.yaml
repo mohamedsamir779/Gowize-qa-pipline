@@ -1,35 +1,56 @@
-name: build crm-frontned-starter-kit
+name: CI/CD - Build and Deploy CRM Frontend (crm-crypto)
+
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: 🧾 Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: ⚙️ Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 16.x
+          node-version: 16.8.0
+          cache: 'npm'
+          cache-dependency-path: crm-frontned-starter-kit/
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
+      - name: 📦 Install dependencies
         working-directory: crm-frontned-starter-kit
-        continue-on-error: false
-        id: install-dependencies
+        run: npm i --legacy-peer-deps
 
-      - name: Run ESLint
-        uses: actions/checkout@v2
+      - name: 🏗 Build app for production
+        working-directory: crm-frontned-starter-kit
+        run: NODE_OPTIONS="--max-old-space-size=8192" npm run build
+
+      - name: 📦 Upload build artifact
+        uses: actions/upload-artifact@v4
         with:
-          files: src/
+          name: build-folder
+          path: crm-frontned-starter-kit/build
 
-      - name: Build the React app
-        run: npm run build 
-        working-directory: crm-frontned-starter-kit
-        continue-on-error: false
-        id: build-app
+  deploy:
+    name: 🚀 Deploy to Production Server
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📂 Download built files
+        uses: actions/download-artifact@v4
+        with:
+          name: build-folder
+          path: ./build
+
+      - name: 🚀 Deploy via SCP to production server
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          source: "./build/*"
+          target: "/var/www/gowizeqa/crm-frontend"
