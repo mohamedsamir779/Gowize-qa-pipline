@@ -1,5 +1,4 @@
 name: CI/CD - Build and Deploy CRM Frontend (crm-crypto)
-
 on:
   push:
     branches: [ main ]
