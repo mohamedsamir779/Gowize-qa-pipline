@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5cc945b8.chunk.css",
+    "main.js": "/static/js/main.fa8e7ee4.chunk.js",
+    "main.js.map": "/static/js/main.fa8e7ee4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.db047e4e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.db047e4e.js.map",
+    "static/css/2.86a10798.chunk.css": "/static/css/2.86a10798.chunk.css",
+    "static/js/2.788fc025.chunk.js": "/static/js/2.788fc025.chunk.js",
+    "static/js/2.788fc025.chunk.js.map": "/static/js/2.788fc025.chunk.js.map",
+    "static/js/3.7705fb70.chunk.js": "/static/js/3.7705fb70.chunk.js",
+    "static/js/3.7705fb70.chunk.js.map": "/static/js/3.7705fb70.chunk.js.map",
+    "static/css/4.0db60435.chunk.css": "/static/css/4.0db60435.chunk.css",
+    "static/js/4.832bd996.chunk.js": "/static/js/4.832bd996.chunk.js",
+    "static/js/4.832bd996.chunk.js.map": "/static/js/4.832bd996.chunk.js.map",
+    "static/js/5.da75fae8.chunk.js": "/static/js/5.da75fae8.chunk.js",
+    "static/js/5.da75fae8.chunk.js.map": "/static/js/5.da75fae8.chunk.js.map",
+    "index.html": "/index.html",
+    "service-worker.js": "/service-worker.js",
+    "service-worker.js.map": "/service-worker.js.map",
+    "static/css/2.86a10798.chunk.css.map": "/static/css/2.86a10798.chunk.css.map",
+    "static/css/4.0db60435.chunk.css.map": "/static/css/4.0db60435.chunk.css.map",
+    "static/css/main.5cc945b8.chunk.css.map": "/static/css/main.5cc945b8.chunk.css.map",
+    "static/js/2.788fc025.chunk.js.LICENSE.txt": "/static/js/2.788fc025.chunk.js.LICENSE.txt",
+    "static/js/3.7705fb70.chunk.js.LICENSE.txt": "/static/js/3.7705fb70.chunk.js.LICENSE.txt",
+    "static/js/5.da75fae8.chunk.js.LICENSE.txt": "/static/js/5.da75fae8.chunk.js.LICENSE.txt",
+    "static/media/theme-rtl.scss": "/static/media/materialdesignicons-webfont.e9db4005.woff2",
+    "static/media/avatar-1.0fdabd61.jpg": "/static/media/avatar-1.0fdabd61.jpg",
+    "static/media/avatar-3.bd68c38c.jpg": "/static/media/avatar-3.bd68c38c.jpg",
+    "static/media/brand-main-sm.5e756188.png": "/static/media/brand-main-sm.5e756188.png",
+    "static/media/getFetch.cjs": "/static/media/getFetch.5fde86e3.cjs",
+    "static/media/logo-sm.87ff5472.svg": "/static/media/logo-sm.87ff5472.svg",
+    "static/media/uae.359cde04.jpg": "/static/media/uae.359cde04.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db047e4e.js",
+    "static/css/2.86a10798.chunk.css",
+    "static/js/2.788fc025.chunk.js",
+    "static/css/main.5cc945b8.chunk.css",
+    "static/js/main.fa8e7ee4.chunk.js"
+  ]
+}
