@@ -21,7 +21,7 @@ jobs:
           cache-dependency-path: crm-frontned-starter-kit/
 
       - name: 📦 Install dependencies
-        working-directory: crm-frontned-starter-kit
+        working-directory: ./crm-frontned-starter-kit
         run: npm i --legacy-peer-deps
 
       - name: 🏗 Build app for production
