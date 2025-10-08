@@ -26,7 +26,7 @@ jobs:
       - name: 🏗 Build app for production (ignore CI warnings)
         working-directory: ./crm-frontned-starter-kit
         run: |
-          CI=false npm run build:prod
+          CI=false npm run build
 
       - name: 📦 Upload build artifact
         uses: actions/upload-artifact@v4
