@@ -2,6 +2,8 @@ name: CI/CD - Build and Deploy CRM Frontend (crm-crypto)
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]         
   workflow_dispatch:
 
 jobs:
