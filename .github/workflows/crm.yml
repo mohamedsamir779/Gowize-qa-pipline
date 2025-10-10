@@ -52,5 +52,7 @@ jobs:
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
+          script: |
+            cd /home/ubuntu/Gowize-qa-pipline/crm-frontned-starter-kit
           key: ${{ secrets.SERVER_SSH_KEY }}
         
