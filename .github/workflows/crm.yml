@@ -1,10 +1,12 @@
 name: CI/CD - Build and Deploy CRM Frontend (crm-crypto)
+
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]         
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,8 +28,7 @@ jobs:
 
       - name: 🏗 Build app for production (ignore CI warnings)
         working-directory: ./crm-frontned-starter-kit
-        run: |
-          CI=false npm run build
+        run: CI=false npm run build
 
       - name: 📦 Upload build artifact
         uses: actions/upload-artifact@v4
@@ -47,13 +48,23 @@ jobs:
           name: build-folder
           path: ./build
 
-      - name: 🚀 Deploy via SCP to production server
+      # ✅ الخطوة الأولى: رفع الملفات إلى السيرفر
+      - name: 📤 Upload build to server via SCP
         uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          source: ./build/*
+          target: /home/ubuntu/Gowize-qa-pipline/crm-frontned-starter-kit/build
+
+      # ✅ الخطوة الثانية: تشغيل أوامر على السيرفر (اختياري)
+      - name: 🖥️ Restart Nginx service
+        uses: appleboy/ssh-action@v1.1.0
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /home/ubuntu/Gowize-qa-pipline/crm-frontned-starter-kit
-          
-        
+            sudo systemctl restart nginx
