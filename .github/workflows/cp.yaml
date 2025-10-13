@@ -54,7 +54,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: ./build/*
-          target: /var/www/gowize/build
+          target: /var/www/gowize/
 
       # ✅ الخطوة الثانية: تشغيل أوامر على السيرفر (اختياري)
       - name: 🖥️ Restart Nginx service
