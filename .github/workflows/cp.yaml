@@ -52,7 +52,7 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
-          source: ./build/*
+          source: ./build/.
           target: /var/www/gowize/
 
       # ✅ الخطوة الثانية: تشغيل أوامر على السيرفر (اختياري)
