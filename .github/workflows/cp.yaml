@@ -64,5 +64,5 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /home/ubuntu/Gowize-qa-pipline/client-portal-starter
-            cp build/* /var/www/gowize/cp-frontend -r
+            cp build/* /var/www/gowizeqa/cp-frontend -r
             sudo systemctl restart nginx
