@@ -1,0 +1,60 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "logs/api-logs/.2696c112de10176dcb234355c24f39b32422eca9-audit.json",
+    "files": [
+        {
+            "date": 1760081995505,
+            "name": "logs/api-logs/application-2025-10-10-07-combined.log",
+            "hash": "4ea8674e32091d7d5b2f82bdce3c0772282c5586379ec9d22652fc8240d18812"
+        },
+        {
+            "date": 1760302637814,
+            "name": "logs/api-logs/application-2025-10-12-20-combined.log",
+            "hash": "a8b66461e3e442f54bbae2cbb3f9b1235f568196ef77fd42a49cfac9dacc32c9"
+        },
+        {
+            "date": 1760306903192,
+            "name": "logs/api-logs/application-2025-10-12-22-combined.log",
+            "hash": "e30b0543356535dcc05d6dfaa7095dbdab70d56ba5d9658ebdeed4c5abec6297"
+        },
+        {
+            "date": 1760438204818,
+            "name": "logs/api-logs/application-2025-10-14-10-combined.log",
+            "hash": "70f43957d42b73d40a6ea6c77a452da1a4e33d2897eb13d2d17b6d4f42c99c6f"
+        },
+        {
+            "date": 1760479572874,
+            "name": "logs/api-logs/application-2025-10-14-22-combined.log",
+            "hash": "7df97ca12c75cab8fc3e3a29b98055bae0780204f3923c097a5197f4712482a5"
+        },
+        {
+            "date": 1760523547443,
+            "name": "logs/api-logs/application-2025-10-15-10-combined.log",
+            "hash": "529e70fa09543f10f531de92ad426f5f7f665a019629765c8a5b3921171fdebd"
+        },
+        {
+            "date": 1761126025160,
+            "name": "logs/api-logs/application-2025-10-22-09-combined.log",
+            "hash": "5d1969c5ba893b05c933b635908e0efc88db11d5a473e660effe33b454d81a43"
+        },
+        {
+            "date": 1761127200191,
+            "name": "logs/api-logs/application-2025-10-22-10-combined.log",
+            "hash": "caa6143f43f57da796075598260b8db17013a59f15aac7131ff75bff40fd3a09"
+        },
+        {
+            "date": 1761130800552,
+            "name": "logs/api-logs/application-2025-10-22-11-combined.log",
+            "hash": "d7649774f6b2427fd32273c9d716fe197fcdb583d5e3056f7c33a4edb9df741e"
+        },
+        {
+            "date": 1761134405183,
+            "name": "logs/api-logs/application-2025-10-22-12-combined.log",
+            "hash": "6a7f6cdb5c869d48d67c88b3d53037b015e389a5a32013333c4cd147b815c619"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,55 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "logs/api-logs/.fc8ed211435ade3b06c47da2108df053d402ed88-audit.json",
+    "files": [
+        {
+            "date": 1760302637812,
+            "name": "logs/api-logs/application-2025-10-12-20-error.log",
+            "hash": "99570f6ff12840b2d55df54674c3ef1e8eeccf7fa1b77f9c8ac712fa094d2c7c"
+        },
+        {
+            "date": 1760306903189,
+            "name": "logs/api-logs/application-2025-10-12-22-error.log",
+            "hash": "719d3c755dd88b9b1aef610abe52434ccad4e67d3dd5f60c05162e3e5f6a433e"
+        },
+        {
+            "date": 1760438767584,
+            "name": "logs/api-logs/application-2025-10-14-10-error.log",
+            "hash": "686a5ee4ead772b52240682a44ad4aac7539101d21f91349ff8354e56551146c"
+        },
+        {
+            "date": 1760479572870,
+            "name": "logs/api-logs/application-2025-10-14-22-error.log",
+            "hash": "ea050cdaed16733d1b93dedd6eb3e282036a00f49bf2a48758a7ae978d60c11b"
+        },
+        {
+            "date": 1760523547441,
+            "name": "logs/api-logs/application-2025-10-15-10-error.log",
+            "hash": "ce2ba425f62985384bd786a1c3ca0a7edb14e9c377e468fc44a0f70c7e8c46b0"
+        },
+        {
+            "date": 1761126025156,
+            "name": "logs/api-logs/application-2025-10-22-09-error.log",
+            "hash": "c2402daadea9fc6628c8af2874d4c4bf12402e831c93709d3250fcc9be268ae8"
+        },
+        {
+            "date": 1761127200189,
+            "name": "logs/api-logs/application-2025-10-22-10-error.log",
+            "hash": "cc5ee0694186cc38185b4bbb1f3a156e84969731d522bba9e7bca7b28fdf4312"
+        },
+        {
+            "date": 1761130800777,
+            "name": "logs/api-logs/application-2025-10-22-11-error.log",
+            "hash": "895a84067b0a1532a72e799fb89144c13d544bd45989c58b20187a92969fb93b"
+        },
+        {
+            "date": 1761134405431,
+            "name": "logs/api-logs/application-2025-10-22-12-error.log",
+            "hash": "1c0062ca1679e1a69e237c17f56aa79f422239f49a9fee5fed151de195315d1f"
+        }
+    ],
+    "hashType": "sha256"
+}
